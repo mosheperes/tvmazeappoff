@@ -1,11 +1,12 @@
-export class episodes{
+export class Episodes {
+  shownumber: number;
   episodename: string;
-  premiered: string;
-  status: string;
+  aired: Date;
+
   constructor(args?) {
-      this.episodename = args.episodename;
-      this.premiered = args.premiered;
-      this.status = args.city;
+    this.shownumber = args.shownumber;
+    this.episodename = args.episodename;
+    this.aired = args.aired;
     }
 
   }

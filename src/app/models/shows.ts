@@ -1,34 +1,13 @@
-// region imports ;
-// import {Address} from './address';
-// import {Review} from './review';
-// import construct = Reflect.construct;
 
+export class Shows {
+  showname: string;
+  premiered: string;
+  status: string;
 
-
-// restaurants
-// endRegion;
-export class Restaurant {
-  name: string;
-  website: string;
-  phone: string;
-  rating: number;
-  priceRange: number;
-  // endregion
   constructor(args?) {
-    if (args) {
-      this.name = args.name;
-      this.website = args.website;
-      this.phone = args.phone;
-      this.rating = args.rating;
-      this.priceRange = args.priceRange;
-    } else {
-      this.name = '';
-      this.website = '';
-      this.phone = '';
-      this.rating = null;
-      this.priceRange = null;
-
-    }
+      this.showname = args.showname;
+      this.premiered = args.premiered;
+      this.status = args.status;
   }
 
 }

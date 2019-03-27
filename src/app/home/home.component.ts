@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class HomeComponent implements OnInit {
+  query: string;
 
   constructor() { }
 
@@ -18,4 +20,5 @@ export class NavbarComponent implements OnInit {
 //     this.router.navigateByUrl('/user');
 //   };
 
+// }
 }
