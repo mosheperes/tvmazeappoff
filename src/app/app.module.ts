@@ -8,7 +8,7 @@ import { SearchResultsComponent } from './views/search-results/search-results.co
 import {MatFormFieldModule, MatInputModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './views/home/home.component';
 import { ShowdetailsComponent } from './showdetails/showdetails.component';
 // import { Router } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';

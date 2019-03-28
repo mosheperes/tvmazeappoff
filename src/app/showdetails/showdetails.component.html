@@ -1,3 +1,21 @@
-<p>
-  showdetails works!
-</p>
+<<!--mat-accordion *ngIf="season">
+  <mat-expansion-panel *ngFor="let season of seasons">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{season.season.name}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{show.show.premiered}}
+      </mat-panel-description>
+      <mat-panel-description>
+        {{show.show.status}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <img *ngIf="show.show.image" [src]="show.show.image.medium" [alt]="show.show.name">
+    <span [innerHTML]="show.show.summary"></span>
+    <mat-action-row>
+      <button mat-button routerLink="/show/{{show.show.id}}">Click me</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
+-->
