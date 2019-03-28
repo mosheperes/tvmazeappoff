@@ -11,7 +11,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { ShowdetailsComponent } from './showdetails/showdetails.component';
 // import { Router } from '@angular/router';
-
+import {HttpClientModule} from '@angular/common/http';
+import {MatExpansionModule} from '@angular/material/expansion';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,8 +29,9 @@ import { ShowdetailsComponent } from './showdetails/showdetails.component';
     MatInputModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    FormsModule
-    // Router
+    FormsModule,
+    HttpClientModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

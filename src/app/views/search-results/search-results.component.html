@@ -1,3 +1,21 @@
-<p>
-  search-results works!
-</p>
+
+<mat-accordion *ngIf="shows">
+  <mat-expansion-panel *ngFor="let show of shows">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{show.show.name}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{show.show.premiered}}
+      </mat-panel-description>
+      <mat-panel-description>
+        {{show.show.status}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <img *ngIf="show.show.image" [src]="show.show.image.medium" [alt]="show.show.name">
+    <span [innerHTML]="show.show.summary"></span>
+    <mat-action-row>
+      <button mat-button routerLink="/show/{{show.show.id}}">Click me</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>

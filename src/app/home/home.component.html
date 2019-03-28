@@ -1,14 +1,16 @@
  <body>
  <form class="example-form">
      <mat-form-field class="example-full-width">
-      <input matInput placeholder="Enter A Tv Show" [(ngModel)]="query" name="name">
+      <input matInput placeholder="Enter A Tv Show" [(ngModel)]="search" name="search">
      </mat-form-field>
 
 
-   <button mat-raised-button color="primary" routerLink="/search/{{query}}">Search</button>
+   <button mat-raised-button color="primary" routerLink="/search-results/{{search}}">Search</button>
+
+
      <!--<a routerLink="/Shows"><button mat-raised-button color="primary">Search </button></a>-->
 
    </form>
- <h2>{{query}}</h2>
+ <h2>{{search}}</h2>
  </body>
 

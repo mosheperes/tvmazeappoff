@@ -6,7 +6,7 @@ import {ShowdetailsComponent} from './showdetails/showdetails.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', component: HomeComponent},
-  {path: 'search/:query', component: SearchResultsComponent},
+  {path: 'search-results/:search', component: SearchResultsComponent},
   {path: 'show/:showId', component: ShowdetailsComponent}
 ];
 
