@@ -9,18 +9,20 @@ import {MatFormFieldModule, MatInputModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './views/home/home.component';
-import { ShowdetailsComponent } from './showdetails/showdetails.component';
-// import { Router } from '@angular/router';
+import { ShowdetailsComponent } from './views/showdetails/showdetails.component';
+
 import {HttpClientModule} from '@angular/common/http';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { SeasonDetailsComponent } from './views/season-details/season-details.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SearchResultsComponent,
     HomeComponent,
-    ShowdetailsComponent
-    // AppModule
+    ShowdetailsComponent,
+    SeasonDetailsComponent
   ],
   imports: [
     BrowserModule,

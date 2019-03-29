@@ -1,0 +1,17 @@
+
+<mat-accordion *ngIf="seasons">
+  <mat-expansion-panel *ngFor="let season of seasons">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Season {{season.number}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{season.premiereDate}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <app-season-details [seasonId]="season.id"></app-season-details>
+
+  </mat-expansion-panel>
+</mat-accordion>
+

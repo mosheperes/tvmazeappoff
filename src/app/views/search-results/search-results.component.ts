@@ -1,6 +1,6 @@
 import {Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {DataService} from '../../data.service';
+import {DataService} from '../../models/data.service';
 
 @Component({
   selector: 'app-search-results',
@@ -16,7 +16,7 @@ export class SearchResultsComponent implements OnInit {
 
   getshow() {
     const search = this.route.snapshot.paramMap.get('search');
-    this.dataservice.getshows(search).subscribe((results) => this.shows = results );
+    this.dataservice.getShows(search).subscribe((results) => this.shows = results );
   }
 
 }

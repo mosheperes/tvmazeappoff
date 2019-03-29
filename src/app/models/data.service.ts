@@ -9,7 +9,14 @@ export class DataService {
 
   constructor(private Http: HttpClient) { }
 
-  getshows(search: string): Observable<any> {
+  getShows(search: string): Observable<any> {
     return this.Http.get<any>( 'http://api.tvmaze.com/search/shows?q=' + search);
+  }
+  getSeasons(showId: string): Observable<any> {
+    return this.Http.get<any> ('http://api.tvmaze.com/shows/' + showId + '/seasons');
+  }
+
+  getEpisodes(seasonId: string) {
+    return this.Http.get<any> ('http://api.tvmaze.com/seasons/' + seasonId + '/episodes');
   }
 }

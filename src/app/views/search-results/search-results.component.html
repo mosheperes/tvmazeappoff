@@ -1,4 +1,3 @@
-
 <mat-accordion *ngIf="shows">
   <mat-expansion-panel *ngFor="let show of shows">
     <mat-expansion-panel-header>
@@ -6,14 +5,16 @@
         {{show.show.name}}
       </mat-panel-title>
       <mat-panel-description>
-        {{show.show.premiered}}
+        {{show.show.seasons}}
       </mat-panel-description>
       <mat-panel-description>
         {{show.show.status}}
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <img *ngIf="show.show.image" [src]="show.show.image.medium" [alt]="show.show.name">
-    <span [innerHTML]="show.show.summary"></span>
+    <div>
+      <img *ngIf="show.show.image" [src]="show.show.image.original" [alt]="show.show.name" style="max-width: 35px">
+      <span [innerHTML]="show.show.summary"></span>
+    </div>
     <mat-action-row>
       <button mat-button routerLink="/show/{{show.show.id}}">Details</button>
     </mat-action-row>
