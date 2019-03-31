@@ -1,6 +1,7 @@
 import {Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {DataService} from '../../models/data.service';
+import {Shows} from '../../models/shows';
 
 @Component({
   selector: 'app-search-results',
@@ -8,7 +9,7 @@ import {DataService} from '../../models/data.service';
   styleUrls: ['./search-results.component.sass']
 })
 export class SearchResultsComponent implements OnInit {
-  shows: any;
+  shows: Shows[];
   constructor(private route: ActivatedRoute, private dataservice: DataService ) { }
   ngOnInit() {
     this.getshow();

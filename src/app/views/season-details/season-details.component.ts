@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {DataService} from '../../models/data.service';
+import {Episodes} from '../../models/episodes';
 
 @Component({
   selector: 'app-season-details',
@@ -8,7 +9,7 @@ import {DataService} from '../../models/data.service';
 })
 export class SeasonDetailsComponent implements OnInit {
   @Input() seasonId: string;
-  episodes: any[];
+  episodes: Episodes[];
   constructor(private dataService: DataService) { }
 
   ngOnInit() {

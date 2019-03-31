@@ -1,13 +1,14 @@
 
 export class Shows {
-  showname: string;
-  premiered: string;
-  status: string;
 
-  constructor(args?) {
-      this.showname = args.showname;
-      this.premiered = args.premiered;
-      this.status = args.status;
-  }
+  show: {
+    id: number,
+    name: string,
+    status: string,
+    premiered: Date,
+    rating: { average: number },
+    image: {medium: string},
+    summary: string;
+  };
 
 }
