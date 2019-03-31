@@ -20,4 +20,4 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 
-// this is where everything goes to we add paths in here to link to other pages that's why it is called "route"
+// this page is where everything goes to we add paths in here to link to other pages that's why it is called "route"
