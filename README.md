@@ -1,27 +1,17 @@
-# Tvmaze
+# Tvmaze App
+#name: Moshe Peres
+#studentId: 1830467
+#Link:  https://github.com/mosheperes/tvmazeappoff.git
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
 
-## Development server
+## Summary:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+hello Here is A simple Tv Maze App which Fetches Tv Shows Fro  The Tv Maze Api.The link Where I get All my information is: https://www.tvmaze.com/ 
+This App  will Give you All the information About a tv shows and will display how many seasons And WIll tell you when the next  Air Date episodes is and the past episodes 
+It will also give you details About the show And As well It will Give You the SUmmary Of a TYv SHow. 
 
-## Code scaffolding
+#conclusion
+Aright! So There is all thr information about my app Feel free to take a look And enjoy it!
+Hope to see you back soon!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+All the best
