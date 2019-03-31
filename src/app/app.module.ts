@@ -15,6 +15,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { SeasonDetailsComponent } from './views/season-details/season-details.component';
 
+// this page is fro all the imports and features that you have to do
 @NgModule({
   declarations: [
     AppComponent,

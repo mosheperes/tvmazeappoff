@@ -1,3 +1,4 @@
+<!-- This page is after you search it will display the show name, show seasons, show status.-->
 <mat-accordion *ngIf="shows">
   <mat-expansion-panel *ngFor="let show of shows">
     <mat-expansion-panel-header>
@@ -16,6 +17,7 @@
       <span [innerHTML]="show.show.summary"></span>
     </div>
     <mat-action-row>
+       <!--When you click on the details button it will redirect you to the Show details and display all the info about show-->
       <button mat-button routerLink="/show/{{show.show.id}}">Details</button>
     </mat-action-row>
   </mat-expansion-panel>

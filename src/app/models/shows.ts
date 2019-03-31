@@ -1,4 +1,4 @@
-
+// This class is being used to To get the Shows By id , name, Status, Premiered,Rating,Image,summary.
 export class Shows {
 
   show: {
