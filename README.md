@@ -1,8 +1,3 @@
-# Tvmaze App
-#name: Moshe Peres
-#studentId: 1830467
-#Link:  https://github.com/mosheperes/tvmazeappoff.git
-
 
 ## Summary:
 
