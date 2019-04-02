@@ -6,7 +6,7 @@ import {Shows} from '../../models/shows';
 @Component({
   selector: 'app-search-results',
   templateUrl: './search-results.component.html',
-  styleUrls: ['./search-results.component.sass']
+  styleUrls: ['./search-results.component.scss']
 })
 // This class has a variable Shows which refers to an array of shows which is in the shows.ts
 export class SearchResultsComponent implements OnInit {
